@@ -171,16 +171,16 @@ canvas{width:100%!important;height:auto!important;display:block;}
 .g-dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:3px;}
 
 /* loss summary */
-.loss-summary{margin-top:16px;border:1px solid rgba(182,91,97,.28);background:#fffafa;padding:18px;}
-.loss-title{font-family:"Shippori Mincho",serif;font-size:20px;font-weight:600;color:var(--black);margin-bottom:12px;}
-.loss-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px;}
-.loss-card{background:#fff;border:1px solid rgba(7,7,7,.1);padding:14px;text-align:left;}
-.loss-card .lc-label{font-size:10px;color:var(--muted);font-weight:800;line-height:1.55;}
-.loss-card .lc-val{font-size:20px;font-weight:900;color:var(--red);margin-top:7px;}
-.loss-total{background:var(--smoke-dark);color:#fff;padding:18px;text-align:center;}
-.loss-total .lt-label{font-size:12px;color:rgba(255,255,255,.65);font-weight:300;letter-spacing:.08em;}
-.loss-total .lt-val{color:#ffe066;font-size:34px;font-weight:300;line-height:1.2;margin-top:6px;}
-.loss-total .lt-sub{font-size:10px;color:rgba(255,255,255,.55);margin-top:5px;font-weight:300;}
+.loss-summary{margin-top:20px;}
+.loss-title{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase;}
+.loss-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:8px;}
+.loss-card{background:#fff;border:1px solid var(--line);padding:14px 12px;text-align:center;border-radius:4px;}
+.loss-card .lc-label{font-size:10px;color:var(--muted);font-weight:400;line-height:1.6;}
+.loss-card .lc-val{font-size:18px;font-weight:300;color:var(--red);margin-top:6px;}
+.loss-total{background:rgba(49,65,69,.07);padding:16px;text-align:center;border-radius:4px;}
+.loss-total .lt-label{font-size:11px;color:var(--muted);font-weight:400;letter-spacing:.06em;}
+.loss-total .lt-val{color:var(--red);font-size:30px;font-weight:300;line-height:1.2;margin-top:5px;}
+.loss-total .lt-sub{font-size:10px;color:var(--muted);margin-top:5px;font-weight:300;}
 
 /* weekly invest box */
 .wi-box{margin-top:16px;background:linear-gradient(135deg,#1a2830 0%,#243038 100%);
@@ -196,7 +196,7 @@ canvas{width:100%!important;height:auto!important;display:block;}
 .wi-result-num{font-size:30px;font-weight:300;color:#ddc989;line-height:1.1;}
 .wi-result-sub{font-size:9px;color:#9ab0b4;margin-top:3px;}
 .wi-msg{font-size:12px;color:#9ab0b4;line-height:1.8;}
-.wi-msg strong{color:#ddc989;font-weight:600;}
+.wi-diff-hl{color:#ddc989;font-weight:500;}
 @media(max-width:480px){.wi-calc{gap:5px;}.wi-result-num{font-size:24px;}}
 
 /* life medical */
@@ -808,7 +808,7 @@ textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(154,136,102,.1
           <div class="wi-result-sub">1週間あたりの健康投資目安</div>
         </div>
       </div>
-      <div class="wi-msg">週1回の運動・健康管理にこの金額を充て続けるだけで、<br><strong id="wiDiffMsg">--</strong>の健康資産損失を防げる計算になります。</div>
+      <div class="wi-msg">週1回の運動・健康管理にこの金額を充て続けるだけで、<br><span id="wiDiffMsg" class="wi-diff-hl">--</span>の健康資産損失を防げる計算になります。</div>
     </div>
 
     <!-- Lifetime medical costs -->
